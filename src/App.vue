@@ -1,21 +1,33 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { onMounted } from 'vue';
+import Home from './views/Home.vue';
+import Projects from './views/Projects.vue';
 </script>
 
-<template >
-  <header class="flex justify-center bg-emerald-900 p-3 text-stone-300">
-      <nav class="flex justify-start w-full lg:w-10/12">
-        <RouterLink to="/" class="pr-2">Home</RouterLink>
-        <RouterLink to="/about"  class="">About</RouterLink>
-      </nav>
+<template class="w-full h-full">
+  <header class="sticky top-0 flex justify-center bg-emerald-800 p-3 text-stone-300 font-semibold text-lg z-1000">
+    <nav class="flex justify-start w-full">
+      <a href="#about" class="pr-4">About</a>
+      <a href="#projects" class="">Projects</a>
+    </nav>
   </header>
 
-  <main class="flex justify-center pt-2 px-3">
-    <RouterView class="w-full mx-4 lg:w-10/12 bg-blue-300 bg-opacity-10"/>
-  </main>
+  <main class="w-fullh-full scroll-smooth">
 
+    <section id="about" class="h-full py-10 bg-red-100/50">
+      <Home />
+    </section>
+
+    <section id="projects" class="min-h-screen pt-10 bg-blue-100/30">
+      <Projects />
+    </section>
+  </main>
 </template>
 
 <style>
 @import 'App.css';
+
+html {
+  scroll-behavior: smooth;
+}
 </style>
