@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-auto px-16 text-white ">
-    <h1>This is an about page</h1>
+    <h1>These are my projects</h1>
   </div>
 </template>
 
