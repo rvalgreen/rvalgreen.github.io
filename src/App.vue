@@ -6,10 +6,10 @@ import Projects from './views/Projects.vue';
 <template class="w-full h-full">
   <div class="h-screen overflow-y-scroll">
 
-    <header class="sticky top-0 flex justify-center bg-emerald-800 p-1
-      px-4
-     text-stone-300 font-semibold text-base z-1000">
-      <nav class="flex justify-start w-full">
+    <header class="sticky top-0 flex justify-center p-1
+      px-4 bg-zinc-800
+     text-stone-200 font-semibold text-base z-1000 ">
+      <nav class="flex justify-start w-full  ">
         <a href="#about" class="pr-4">About</a>
         <a href="#work" class="">Work</a>
       </nav>
@@ -17,11 +17,11 @@ import Projects from './views/Projects.vue';
 
     <main class="w-full h-full">
  
-      <section id="about" class="h-fit bg-red-100/50">
+      <section id="about" class="h-fit bg-gradient-to-b from-zinc-800 to-green-100/50">
         <Home />
       </section>
 
-      <section id="work" class="min-h-screen pt-16 bg-blue-100/30">
+      <section id="work" class="min-h-screen pt-12 bg-green-100/50">
         <Projects />
       </section>
     </main>

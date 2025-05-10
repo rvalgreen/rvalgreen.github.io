@@ -57,7 +57,6 @@ export default {
           focused on European Portuguese (PT-PT). Trained using data from sources like Arquivo.pt, the model aims to strengthen
           the foundation for advanced NLP research in Portuguese, including tasks like chain-of-thought and few-shot
           reasoning. GlórIA is publicly available on Hugging Face, and the project was presented at PROPOR 2024.`,
-          image: "/novalogo.jpg",
           year: "2022-23",
           links: [
             {

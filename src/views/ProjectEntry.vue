@@ -1,5 +1,5 @@
 <template>
-    <div class="text-black divide-y divide-gray-200 overflow-hidden 
+    <div class="text-black overflow-hidden 
   rounded-lg bg-white shadow flex flex-col sm:flex-row items-center content-start">
 
         <!-- Image on the left -->
@@ -30,7 +30,7 @@
                     <a :href="link.href" target="_blank"
                         class="flex items-center justify-center px-2 py-1 rounded transition" :class="link.class"
                         :aria-label="link.ariaLabel">
-                        <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt" class="w-8 h-8 " />
+                        <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt" class="w-8 h-8 rounded-lg" />
                         <i v-else-if="link.iconClass" :class="link.iconClass"></i>
                         <span v-else-if="link.text" class="font-semibold text-xs">{{ link.text }}</span>
                     </a>
