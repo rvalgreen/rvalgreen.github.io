@@ -3,7 +3,7 @@
   flex justify-center items-center gap-x-12 py-10 ">
 
     <div class="flex flex-col justify-center">
-      <div class="text-xl sm:text-4xl font-bold">Ricardo Valverde</div>
+      <div class="text-xl sm:text-4xl font-bold">Ricardo Valverde Lopes</div>
       <div class="text-lg sm:text-lg font-semibold mb-4">Junior Dev @ Cult of Bits</div>
 
       <div class="flex gap-3">
