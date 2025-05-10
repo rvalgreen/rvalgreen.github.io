@@ -15,7 +15,7 @@ import Projects from './views/Projects.vue';
 
     <main class="w-full h-full">
  
-      <section id="about" class="h-full pt-10 bg-red-100/50">
+      <section id="about" class="h-fit bg-red-100/50">
         <Home />
       </section>
 

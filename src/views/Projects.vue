@@ -2,10 +2,9 @@
   <div class="px-8 sm:px-16 py-6">
 
     <div class="text-black divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow">
-      <div class="text-base sm:text-lg font-semibold py-2 sm:px-6 px-2 ">
+      <div class="text-base sm:text-lg font-semibold py-2 px-2 sm:px-6  ">
         GlórIA: A European Portuguese Language Model
       </div>
-
 
       <div class="text-sm sm:text-base py-2 px-2 sm:px-6">
         <div :class="showFullText ? '' : 'line-clamp-2'">
@@ -21,7 +20,7 @@
       </div>
 
 
-      <div class="py-1 px-2 flex items-center text-sm sm:text-base gap-x-2">
+      <div class="py-1 px-2 sm:px-6 flex items-center text-sm sm:text-base gap-x-2">
 
         <div>
           <a href="https://huggingface.co/NOVA-vision-language/GlorIA-1.3B" target="_blank"
