@@ -34,11 +34,15 @@
             <div v-if="links.length > 0" class="px-2 sm:px-6 flex items-center text-sm sm:text-base gap-x-2">
                 <div class="" v-for="(link, index) in links" :key="index">
                     <a :href="link.href" target="_blank"
-                        class="flex items-center justify-center px-2 py-1 rounded transition " :class="link.class"
-                        :aria-label="link.ariaLabel">
-                        <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt" class="w-8 h-8  rounded-lg" />
-                        <i v-else-if="link.iconClass" :class="link.iconClass"></i>
-                        <span v-else-if="link.text" class="font-semibold text-xs">{{ link.text }}</span>
+                        class="flex items-center justify-center w-10 h-10 rounded-lg transition"
+                        :class="link.class"
+                        :aria-label="link.ariaLabel"
+                        >
+                        <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt" class="w-6 h-6 object-contain" />
+                        <i v-else-if="link.iconClass" :class="link.iconClass + ' text-base'"></i>
+                        <span v-else-if="link.text" class="font-semibold text-xs">
+                            {{ link.text }}
+                        </span>
                     </a>
                 </div>
             </div>
