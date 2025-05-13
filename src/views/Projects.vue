@@ -1,11 +1,10 @@
 <template>
   <div class="w-full h-full">
-    <ProjectEntry class="mb-4 mx-auto w-10/12 xl:w-8/12" 
+    <ProjectEntry
     v-for="(project, index) in projects" 
     :key="index" 
     :title="project.title"
-    :description="project.description" 
-    :showMore="project.showMore"
+    :description="project.description"
     :links="project.links" 
     :image="project.image"
     :year="project.year" />
@@ -27,8 +26,8 @@ export default {
         {
           title: 'Junior Software Dev @ Cult of Bits',
           description: `At Cult of Bits, I support operational teams by helping design and implement 
-          client-specific solutions, streamline day-to-day work and developing more Intelligent Business Operations.
-          Backend | Frontend`,
+          client-specific solutions, streamline day-to-day work and developing more Intelligent Business Operations.<br> 
+           <span class="font-bold">Techstack:</span> Java | Groovy | JS | Vue`,
           image: "/cob_wizard.png",
           year: "2024-Now",
           links: []
@@ -39,7 +38,6 @@ export default {
           focused on European Portuguese (PT-PT). Trained using data from sources like Arquivo.pt, the model aims to strengthen
           the foundation for advanced NLP research in Portuguese, including tasks like chain-of-thought and few-shot
           reasoning. GlórIA is publicly available on Hugging Face, and the project was presented at PROPOR 2024.`,
-          showMore: true,
           image: "/gloria.png",
           year: "2022-23",
           links: [
@@ -59,8 +57,21 @@ export default {
               href: 'https://aclanthology.org/2024.propor-1.45/',
               ariaLabel: 'ACL',
               text: 'Paper'
+            },
+            {
+              href: 'https://run.unl.pt/handle/10362/163260',
+              ariaLabel: 'RUN',
+              text: 'Thesis'
             }
           ]
+        },
+        {
+          title: 'ArquiWiz.pt – Research Grant Project on QA and Web Archives',
+          description: `Awarded a research grant to develop <a href="http://arquiwiz.pt/" target="_blank" class="font-semibold text-blue-600">ArquiWiz.pt</a>, a platform built in collaboration for the Arquivo.pt Prize. 
+          It features QA-based information retrieval using cutting-edge language models and dynamic temporal graph visualizations.`,
+          image: "/wiz_staff.png",
+          year: "2022-23",
+          links: [ ]
         }
       ]
     };

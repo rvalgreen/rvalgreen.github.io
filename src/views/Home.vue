@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-auto px-8 sm:px-16 text-white 
-  flex justify-center items-center gap-x-12 py-10 ">
+  flex justify-center items-center gap-x-12 ">
 
     <div class="flex flex-col justify-center">
       <div class="text-xl sm:text-4xl font-bold">Ricardo Valverde Lopes</div>
@@ -30,10 +30,8 @@
       </div>
     </div>
 
-    <div class="w-4/12 flex justify-center items-center">
-      <div class="w-24 h-24 sm:w-64 sm:h-64">
-        <img src="/myphoto.jpg" alt="Your Photo" class=" rounded-full object-cover shadow-lg" />
-      </div>
+    <div class="w-4/12 flex justify-center items-center h-64">
+      <img src="/myphoto.jpg" alt="Your Photo" class="w-48 sm:w-64 aspect-square rounded-full object-cover shadow-lg" />
     </div>
 
   </div>
