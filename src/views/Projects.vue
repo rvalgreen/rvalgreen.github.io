@@ -27,7 +27,7 @@ export default {
           title: 'Junior Software Dev @ Cult of Bits',
           description: `At Cult of Bits, I support operational teams by helping design and implement 
           client-specific solutions, streamline day-to-day work and developing more Intelligent Business Operations.<br> 
-           <span class="font-bold">Techstack:</span> Java | Groovy | JS | Vue`,
+           <span class="font-semibold">Techstack:</span> Java | Groovy | JS | Vue`,
           image: "/cob_wizard.png",
           year: "2024-Now",
           links: []
@@ -45,13 +45,14 @@ export default {
               href: 'https://huggingface.co/NOVA-vision-language/GlorIA-1.3B',
               ariaLabel: 'Hugging Face',
               imgSrc: '/hf-logo.svg',
-              alt: 'Hugging Face'
+              alt: 'Hugging Face',
+              class: "bg-orange-300"
             },
             {
               href: 'https://www.linkedin.com/posts/r-valverde_gl%C3%B3ria-a-generative-and-open-large-language-activity-7168018261622571008-JyyC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpR0ZcBZo4_J0z0W3hapXPJ3LJreB4SAbs',
               ariaLabel: 'LinkedIn',
               iconClass: 'fab fa-linkedin-in text-white',
-              class: 'bg-blue-700 hover:bg-blue-600'
+              class: 'bg-blue-500 hover:bg-blue-600'
             },
             {
               href: 'https://aclanthology.org/2024.propor-1.45/',

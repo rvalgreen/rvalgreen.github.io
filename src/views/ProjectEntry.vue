@@ -1,6 +1,6 @@
 <template>
     <div class="h-full text-black overflow-hidden 
-  rounded-lg bg-white shadow flex flex-col sm:flex-row
+  rounded-lg bg-stone-100 shadow flex flex-col sm:flex-row
   mb-4 mx-auto w-10/12 xl:w-8/12">
 
         <!-- Image on the left -->
@@ -13,7 +13,7 @@
         <div class="flex flex-col justify-between h-full w-full sm:w-10/12">
             <!-- Title and year row -->
             <div class="flex justify-between items-center text-base 
-            sm:text-lg font-semibold py-2 px-2 sm:px-6">
+            sm:text-lg font-semibold py-1 px-2 sm:px-6 border-b-2">
                 <div>{{ title }}</div>
                 <div class="text-xs sm:text-sm text-gray-500 font-normal">{{ year }}</div>
             </div>
@@ -24,22 +24,20 @@
                     :class="showFullText ? '' : 'line-clamp-2 sm:line-clamp-3 lg:line-clamp-4'" v-html="description">
 
                 </div>
-                <button v-if="shouldShowMore" class="mt-2 text-blue-600 hover:underline text-xs"
+                <button v-if="shouldShowMore" class="text-blue-600 hover:underline text-xs"
                     @click="showFullText = !showFullText">
                     {{ showFullText ? 'Show less' : 'Show more' }}
                 </button>
             </div>
 
             <!-- Bottom links -->
-            <div v-if="links.length > 0" class="px-2 sm:px-6 flex items-center text-sm sm:text-base gap-x-2">
+            <div v-if="links.length > 0" class="px-2 sm:px-6 flex items-center text-sm sm:text-base gap-x-2 pb-1">
                 <div class="" v-for="(link, index) in links" :key="index">
                     <a :href="link.href" target="_blank"
-                        class="flex items-center justify-center w-10 h-10 rounded-lg transition"
-                        :class="link.class"
-                        :aria-label="link.ariaLabel"
-                        >
+                        class="flex items-center justify-center w-8 h-8 rounded-lg transition" :class="link.class"
+                        :aria-label="link.ariaLabel">
                         <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt" class="w-6 h-6 object-contain" />
-                        <i v-else-if="link.iconClass" :class="link.iconClass + ' text-base'"></i>
+                        <i v-else-if="link.iconClass" :class="link.iconClass + ' text-sm'"></i>
                         <span v-else-if="link.text" class="font-semibold text-xs">
                             {{ link.text }}
                         </span>
