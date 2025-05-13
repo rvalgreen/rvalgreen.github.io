@@ -19,7 +19,7 @@
             </div>
 
 
-            <div class="text-sm sm:text-base px-2 sm:px-6">
+            <div class="text-sm sm:text-base px-2 sm:px-6 inline">
                 <div ref="descriptionContainer"
                     :class="showFullText ? '' : 'line-clamp-2 sm:line-clamp-3 lg:line-clamp-4'" v-html="description">
 
@@ -31,19 +31,23 @@
             </div>
 
             <!-- Bottom links -->
-            <div v-if="links.length > 0" class="px-2 sm:px-6 flex items-center text-sm sm:text-base gap-x-2 pb-1">
-                <div class="" v-for="(link, index) in links" :key="index">
+            <div v-if="links.length > 0" class="px-2 sm:px-6 flex items-center text-sm gap-x-2 pb-1 pt-2">
+                <div v-for="(link, index) in links" :key="index">
                     <a :href="link.href" target="_blank"
-                        class="flex items-center justify-center w-8 h-8 rounded-lg transition" :class="link.class"
-                        :aria-label="link.ariaLabel">
-                        <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt" class="w-6 h-6 object-contain" />
-                        <i v-else-if="link.iconClass" :class="link.iconClass + ' text-sm'"></i>
-                        <span v-else-if="link.text" class="font-semibold text-xs">
+                        class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-md transition"
+                        :class="link.class" :aria-label="link.ariaLabel">
+                        <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt"
+                            class="w-5 h-5 sm:w-6 sm:h-6 object-contain" />
+                        <i v-else-if="link.iconClass" :class="link.iconClass + ' text-xs sm:text-sm'"></i>
+                        <span v-else-if="link.text" class="font-medium text-xs sm:text-sm">
                             {{ link.text }}
                         </span>
                     </a>
                 </div>
             </div>
+
+
+
         </div>
 
     </div>
