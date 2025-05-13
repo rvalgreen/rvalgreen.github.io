@@ -5,6 +5,7 @@
     :key="index" 
     :title="project.title"
     :description="project.description" 
+    :showMore="project.showMore"
     :links="project.links" 
     :image="project.image"
     :year="project.year" />
@@ -24,32 +25,13 @@ export default {
     return {
       projects: [
         {
-          title: 'GlórIA: A European Portuguese Language Model',
-          description: `As part of my Master’s dissertation, I developed and released GlórIA, a transformer-based language model
-          focused on European Portuguese (PT-PT). Trained using data from sources like Arquivo.pt, the model aims to strengthen
-          the foundation for advanced NLP research in Portuguese, including tasks like chain-of-thought and few-shot
-          reasoning. GlórIA is publicly available on Hugging Face, and the project was presented at PROPOR 2024.`,
-          image: "/novalogo.jpg",
-          year: "2022-23",
-          links: [
-            {
-              href: 'https://huggingface.co/NOVA-vision-language/GlorIA-1.3B',
-              ariaLabel: 'Hugging Face',
-              imgSrc: '/hf-logo.svg',
-              alt: 'Hugging Face'
-            },
-            {
-              href: 'https://www.linkedin.com/posts/r-valverde_gl%C3%B3ria-a-generative-and-open-large-language-activity-7168018261622571008-JyyC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpR0ZcBZo4_J0z0W3hapXPJ3LJreB4SAbs',
-              ariaLabel: 'LinkedIn',
-              iconClass: 'fab fa-linkedin-in text-white',
-              class: 'bg-blue-700 hover:bg-blue-600'
-            },
-            {
-              href: 'https://aclanthology.org/2024.propor-1.45/',
-              ariaLabel: 'ACL',
-              text: 'Paper'
-            }
-          ]
+          title: 'Junior Software Dev @ Cult of Bits',
+          description: `At Cult of Bits, I support operational teams by helping design and implement 
+          client-specific solutions, streamline day-to-day work and developing more Intelligent Business Operations.
+          Backend | Frontend`,
+          image: "/cob_wizard.png",
+          year: "2024-Now",
+          links: []
         },
         {
           title: 'GlórIA: A European Portuguese Language Model',
@@ -57,6 +39,8 @@ export default {
           focused on European Portuguese (PT-PT). Trained using data from sources like Arquivo.pt, the model aims to strengthen
           the foundation for advanced NLP research in Portuguese, including tasks like chain-of-thought and few-shot
           reasoning. GlórIA is publicly available on Hugging Face, and the project was presented at PROPOR 2024.`,
+          showMore: true,
+          image: "/gloria.png",
           year: "2022-23",
           links: [
             {
