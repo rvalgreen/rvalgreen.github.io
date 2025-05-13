@@ -34,10 +34,10 @@ export default {
         },
         {
           title: 'GlórIA: A European Portuguese Language Model',
-          description: `As part of my Master’s dissertation, I developed and released GlórIA, a transformer-based language model
+          description: `As part of my <a href="https://run.unl.pt/handle/10362/163260" target="_blank">Master’s dissertation</a>, I developed and released GlórIA, a transformer-based language model
           focused on European Portuguese (PT-PT). Trained using data from sources like Arquivo.pt, the model aims to strengthen
           the foundation for advanced NLP research in Portuguese, including tasks like chain-of-thought and few-shot
-          reasoning. GlórIA is publicly available on Hugging Face, and the project was presented at PROPOR 2024.`,
+          reasoning. Available on Hugging Face. The project was presented at PROPOR 2024.`,
           image: "/gloria.png",
           year: "2022-23",
           links: [
@@ -57,13 +57,9 @@ export default {
             {
               href: 'https://aclanthology.org/2024.propor-1.45/',
               ariaLabel: 'ACL',
-              text: 'Paper'
+              iconClass: "fa-brands fa-google-scholar",
+              class: "border-2 text-stone-800"
             },
-            {
-              href: 'https://run.unl.pt/handle/10362/163260',
-              ariaLabel: 'RUN',
-              text: 'Thesis'
-            }
           ]
         },
         {

@@ -39,8 +39,8 @@
                         <img v-if="link.imgSrc" :src="link.imgSrc" :alt="link.alt"
                             class="w-5 h-5 sm:w-6 sm:h-6 object-contain" />
                         <i v-else-if="link.iconClass" :class="link.iconClass + ' text-xs sm:text-sm'"></i>
-                        <span v-else-if="link.text" class="font-medium text-xs sm:text-sm">
-                            {{ link.text }}
+                        <span v-else-if="link.text" class="font-medium text-xs sm:text-sm"  v-html="link.text">
+                            
                         </span>
                     </a>
                 </div>
