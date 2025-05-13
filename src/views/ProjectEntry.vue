@@ -4,7 +4,7 @@
   mb-4 mx-auto w-10/12 xl:w-8/12">
 
         <!-- Image on the left -->
-        <div class="flex items-center border-r-2 hidden sm:inline">
+        <div class="hidden sm:flex items-center border-r-2 ">
             <img v-if="image" :src="image" alt="Project image" class="w-36 h-36 rounded-lg object-contain p-2" />
         </div>
 
