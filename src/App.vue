@@ -6,7 +6,7 @@ import Projects from './views/Projects.vue';
 <template class="w-full h-full ">
 
   <header class="sticky top-0 flex justify-center p-1 font-mono
-      bg-cyan-700/70 text-stone-200 font-semibold text-sm z-1000 ">
+      bg-cyan-700 text-stone-100 font-semibold text-sm z-1000 ">
     <nav class="flex justify-center w-full  ">
       <a href="#about" class="pr-4">About</a>
       <a href="#work" class="">Work</a>
