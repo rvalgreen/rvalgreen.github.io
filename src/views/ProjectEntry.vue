@@ -1,10 +1,10 @@
 <template>
     <div class="h-full text-black overflow-hidden 
-  rounded-lg bg-stone-100 shadow flex flex-col sm:flex-row
-  mb-4 mx-auto w-10/12 xl:w-8/12">
+  rounded-lg border-b-2 flex flex-col sm:flex-row
+  mb-2 mx-auto w-10/12 xl:w-8/12">
 
         <!-- Image on the left -->
-        <div class="hidden sm:flex items-center border-r-2 ">
+        <div class="hidden sm:flex items-center ">
             <img v-if="image" :src="image" alt="Project image" class="w-36 h-36 rounded-lg object-contain p-2" />
         </div>
 
@@ -12,14 +12,13 @@
         <!-- Text content -->
         <div class="flex flex-col justify-between h-full w-full sm:w-10/12">
             <!-- Title and year row -->
-            <div class="flex justify-between items-center text-base 
-            sm:text-lg font-semibold py-1 px-2 sm:px-6 border-b-2">
-                <div>{{ title }}</div>
-                <div class="text-xs sm:text-sm text-gray-500 font-normal">{{ year }}</div>
+            <div class="flex justify-between items-center  py-1 px-2 sm:px-6 border-b-2">
+                <div class=" text-cyan-700/65 text-base sm:text-lg font-semibold w-9/12">{{ title }}</div>
+                <div class="text-xs sm:text-sm text-gray-500 font-normal w-2/12 text-right">{{ year }}</div>
             </div>
 
 
-            <div class="text-sm sm:text-base px-2 sm:px-6 inline">
+            <div class="text-sm sm:text-base px-2 sm:px-6 inline font-light">
                 <div ref="descriptionContainer"
                     :class="showFullText ? '' : 'line-clamp-2 sm:line-clamp-3 lg:line-clamp-4'" v-html="description">
 

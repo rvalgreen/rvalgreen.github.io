@@ -1,8 +1,8 @@
 <template>
-  <div class="h-full w-auto px-8 sm:px-16 text-white 
-  flex justify-center items-center gap-x-12 ">
+  <div class="h-full w-auto px-8 sm:px-16 py-4
+  flex justify-center items-center gap-x-12 border-b-2">
 
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center text-cyan-700/65">
       <div class="text-xl sm:text-4xl font-bold">Ricardo Valverde Lopes</div>
       <div class="text-lg sm:text-lg font-semibold mb-4">Junior Dev @ Cult of Bits</div>
 
