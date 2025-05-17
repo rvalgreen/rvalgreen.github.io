@@ -34,7 +34,7 @@ export default {
         },
         {
           title: 'GlórIA: A European Portuguese Language Model',
-          description: `As part of my <a href="https://run.unl.pt/handle/10362/163260" target="_blank">Master’s dissertation</a>, I developed and released GlórIA, a transformer-based language model
+          description: `As part of my <a class="font-semibold text-blue-500" href="https://run.unl.pt/handle/10362/163260" target="_blank">Master’s dissertation</a>, I developed and released GlórIA, a transformer-based language model
           focused on European Portuguese (PT-PT). Trained using data from sources like Arquivo.pt, the model aims to strengthen
           the foundation for advanced NLP research in Portuguese, including tasks like chain-of-thought and few-shot
           reasoning. Available on Hugging Face. The project was presented at PROPOR 2024.`,
@@ -64,7 +64,7 @@ export default {
         },
         {
           title: 'ArquiWiz.pt – Research Grant Project on QA and Web Archives',
-          description: `Awarded a research grant to develop <a href="http://arquiwiz.pt/" target="_blank" class="font-semibold text-blue-600">ArquiWiz.pt</a>, a platform built in collaboration for the Arquivo.pt Prize. 
+          description: `Awarded a research grant to develop <a href="http://arquiwiz.pt/" target="_blank" class="font-semibold text-blue-500">Arquiwiz.pt</a>, a platform built in collaboration for the <a href="https://sobre.arquivo.pt/pt/colabore/premios-arquivo-pt/premio-arquivo-pt-2023/"  class="font-semibold text-blue-500" target="_blank">2023 Arquivo.pt Award</a>. 
           It features QA-based information retrieval using cutting-edge language models and dynamic temporal graph visualizations.`,
           image: "/wiz_staff.png",
           year: "2022-23",
