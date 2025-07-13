@@ -1,7 +1,7 @@
 <template>
     <div class="h-full text-black overflow-hidden 
-  rounded-lg border-b-2 flex flex-col sm:flex-row
-  mb-2 mx-auto w-10/12 xl:w-8/12">
+  rounded-lg  flex flex-col sm:flex-row
+  mb-8 mx-auto w-10/12 xl:w-8/12">
 
         <!-- Image on the left -->
         <div class="hidden sm:flex items-center ">
