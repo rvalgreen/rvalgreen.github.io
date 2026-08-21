@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full w-full">
+<html lang="en" class="h-full w-full" style="scroll-behavior: smooth;">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>R.Valgreen</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2V78VWXKGG"></script>
@@ -18,14 +20,164 @@
     gtag('config', 'G-2V78VWXKGG');
   </script>
 
-  <script type="module" crossorigin src="/assets/index-DTltZwsY.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CBLH3Tvd.css">
 </head>
 
 <body class="h-full w-full bg-stone-100">
 
-  <div id="app" class="h-full w-full"></div>
+  <header class="sticky top-0 flex justify-center p-1 font-mono
+      bg-cyan-700 text-stone-100 font-semibold text-sm z-1000">
+    <nav class="flex justify-center w-full">
+      <a href="#about" class="pr-4">About</a>
+      <a href="#work">Work</a>
+    </nav>
+  </header>
 
+  <main class="w-full h-full">
+
+    <section id="about" class="h-fit font-mono">
+      <div class="px-8 sm:px-16 py-4 flex flex-col-reverse sm:flex-row items-center justify-center gap-x-8 gap-y-4">
+
+        <div class="flex flex-col justify-center text-center sm:text-left">
+          <div class="text-xl sm:text-4xl font-bold text-cyan-700">Ricardo Valverde Lopes</div>
+          <div class="text-lg sm:text-lg font-semibold mb-4 text-cyan-700">Software Dev @ Cult of Bits</div>
+
+          <div class="flex gap-3 justify-center sm:justify-start">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/r-valverde" target="_blank"
+              class="text-base md:text-xl shadow-md bg-blue-700 flex items-center justify-center px-2 py-1 rounded hover:bg-blue-600 transition"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/rvalgreen" target="_blank"
+              class="text-base md:text-xl shadow-md bg-gray-600 flex items-center justify-center px-2 py-1 rounded hover:bg-gray-700 transition"
+              aria-label="GitHub">
+              <i class="fab fa-github text-white"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <img src="/myphoto.jpg" alt="Your Photo"
+            class="w-48 sm:w-64 aspect-square rounded-full object-cover shadow-lg ring-4 ring-cyan-600/20 ring-offset-2 ring-offset-white" />
+        </div>
+
+      </div>
+    </section>
+
+    <section id="work" class="min-h-screen pt-12">
+
+      <!-- Cult of Bits -->
+      <div class="project-entry h-full text-black overflow-hidden
+        rounded-lg border-l-4 border-cyan-600 bg-white shadow-md ring-1 ring-black/5
+        flex flex-col sm:flex-row
+        mb-8 mx-auto w-10/12 xl:w-8/12
+        transition hover:shadow-lg hover:-translate-y-0.5">
+
+        <div class="hidden sm:flex items-center justify-center">
+          <img src="/cob_wizard.png" alt="Project image"
+            class="sm:w-36 sm:h-36 rounded-lg bg-gray-50 object-contain p-2" />
+        </div>
+
+        <div class="flex flex-col justify-between h-full w-full sm:w-10/12">
+          <div class="flex justify-between items-center py-1 px-2 sm:px-6 border-b-2 border-gray-100">
+            <div class="text-cyan-700 text-base sm:text-xl font-semibold flex-1 min-w-0 pr-2">Software Dev @ Cult of Bits</div>
+            <div class="text-xs sm:text-sm text-cyan-700 font-medium bg-cyan-50 rounded-full px-2 py-0.5 shrink-0">2024-Now</div>
+          </div>
+
+          <div class="text-sm sm:text-base px-2 sm:px-6 inline font-light">
+            <div class="project-description line-clamp-2 sm:line-clamp-3 lg:line-clamp-4">
+              At Cult of Bits, I support operational teams by helping design and implement
+              client-specific solutions, streamline day-to-day work and developing more Intelligent Business Operations.
+              (Java | Groovy | JS | Vue)
+            </div>
+            <button class="show-more-btn hidden text-blue-600 hover:underline text-xs">Show more</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- GlórIA -->
+      <div class="project-entry h-full text-black overflow-hidden
+        rounded-lg border-l-4 border-cyan-600 bg-white shadow-md ring-1 ring-black/5
+        flex flex-col sm:flex-row
+        mb-8 mx-auto w-10/12 xl:w-8/12
+        transition hover:shadow-lg hover:-translate-y-0.5">
+
+        <div class="hidden sm:flex items-center justify-center">
+          <img src="/gloria.png" alt="Project image"
+            class="sm:w-36 sm:h-36 rounded-lg bg-gray-50 object-contain p-2" />
+        </div>
+
+        <div class="flex flex-col justify-between h-full w-full sm:w-10/12">
+          <div class="flex justify-between items-center py-1 px-2 sm:px-6 border-b-2 border-gray-100">
+            <div class="text-cyan-700 text-base sm:text-xl font-semibold flex-1 min-w-0 pr-2">GlórIA: A European Portuguese Language Model</div>
+            <div class="text-xs sm:text-sm text-cyan-700 font-medium bg-cyan-50 rounded-full px-2 py-0.5 shrink-0">2022-23</div>
+          </div>
+
+          <div class="text-sm sm:text-base px-2 sm:px-6 inline font-light">
+            <div class="project-description line-clamp-2 sm:line-clamp-3 lg:line-clamp-4">
+              As part of my <a class="text-blue-600" href="https://run.unl.pt/handle/10362/163260" target="_blank">Master’s dissertation</a>, I developed and released GlórIA, a transformer-based language model
+              focused on European Portuguese (PT-PT). Trained using data from sources like Arquivo.pt, the model aims to strengthen
+              the foundation for advanced NLP research in Portuguese, including tasks like chain-of-thought and few-shot
+              reasoning. Available on Hugging Face. The project was presented at PROPOR 2024.
+            </div>
+            <button class="show-more-btn hidden text-blue-600 hover:underline text-xs">Show more</button>
+          </div>
+
+          <div class="px-2 sm:px-6 flex items-center text-sm gap-x-2 pb-1 pt-2 border-t border-gray-100 mt-2">
+            <a href="https://huggingface.co/NOVA-vision-language/GlorIA-1.3B" target="_blank"
+              class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-md transition bg-orange-200 hover:bg-orange-300"
+              aria-label="Hugging Face">
+              <img src="/hf-logo.svg" alt="Hugging Face" class="w-5 h-5 sm:w-6 sm:h-6 object-contain" />
+            </a>
+            <a href="https://www.linkedin.com/posts/r-valverde_gl%C3%B3ria-a-generative-and-open-large-language-activity-7168018261622571008-JyyC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpR0ZcBZo4_J0z0W3hapXPJ3LJreB4SAbs"
+              target="_blank"
+              class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-md transition bg-blue-400 hover:bg-blue-600"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in text-white text-xs sm:text-sm"></i>
+            </a>
+            <a href="https://aclanthology.org/2024.propor-1.45/" target="_blank"
+              class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-md transition border-2 text-stone-800 hover:bg-stone-200"
+              aria-label="ACL">
+              <i class="fa-brands fa-google-scholar text-xs sm:text-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ArquiWiz -->
+      <div class="project-entry h-full text-black overflow-hidden
+        rounded-lg border-l-4 border-cyan-600 bg-white shadow-md ring-1 ring-black/5
+        flex flex-col sm:flex-row
+        mb-8 mx-auto w-10/12 xl:w-8/12
+        transition hover:shadow-lg hover:-translate-y-0.5">
+
+        <div class="hidden sm:flex items-center justify-center">
+          <img src="/wiz_staff.png" alt="Project image"
+            class="sm:w-36 sm:h-36 rounded-lg bg-gray-50 object-contain p-2" />
+        </div>
+
+        <div class="flex flex-col justify-between h-full w-full sm:w-10/12">
+          <div class="flex justify-between items-center py-1 px-2 sm:px-6 border-b-2 border-gray-100">
+            <div class="text-cyan-700 text-base sm:text-xl font-semibold flex-1 min-w-0 pr-2">ArquiWiz.pt – Research Grant Project on QA and Web Archives</div>
+            <div class="text-xs sm:text-sm text-cyan-700 font-medium bg-cyan-50 rounded-full px-2 py-0.5 shrink-0">2022-23</div>
+          </div>
+
+          <div class="text-sm sm:text-base px-2 sm:px-6 inline font-light">
+            <div class="project-description line-clamp-2 sm:line-clamp-3 lg:line-clamp-4">
+              Awarded a research grant to develop <a href="http://arquiwiz.pt/" target="_blank" class="text-blue-600">Arquiwiz.pt</a>, a platform built in collaboration for the <a href="https://sobre.arquivo.pt/pt/colabore/premios-arquivo-pt/premio-arquivo-pt-2023/" class="text-blue-600" target="_blank">2023 Arquivo.pt Award</a>.
+              It features QA-based information retrieval using cutting-edge language models and dynamic temporal graph visualizations.
+            </div>
+            <button class="show-more-btn hidden text-blue-600 hover:underline text-xs">Show more</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="/main.js"></script>
 </body>
 
 </html>
