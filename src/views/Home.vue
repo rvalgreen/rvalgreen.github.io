@@ -3,7 +3,7 @@
 
     <div class="flex flex-col justify-center text-cyan-700/65">
       <div class="text-xl sm:text-4xl font-bold">Ricardo Valverde Lopes</div>
-      <div class="text-lg sm:text-lg font-semibold mb-4">Junior Dev @ Cult of Bits</div>
+      <div class="text-lg sm:text-lg font-semibold mb-4">Software Dev @ Cult of Bits</div>
 
       <div class="flex gap-3">
         <!-- Email -->
