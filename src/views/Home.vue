@@ -22,7 +22,7 @@
 
         <!-- GitHub -->
         <a href="https://github.com/rvalgreen" target="_blank"
-          class="text-base md:text-xl shadow-md bg-gray-800  flex items-center justify-center px-2 py-1 rounded hover:bg-blue-600 transition"
+          class="text-base md:text-xl shadow-md bg-gray-600  flex items-center justify-center px-2 py-1 rounded hover:bg-gray-700 transition"
           aria-label="GitHub">
           <i class="fab fa-github text-white "></i>
         </a>

@@ -12,8 +12,8 @@
         <!-- Text content -->
         <div class="flex flex-col justify-between h-full w-full sm:w-10/12">
             <!-- Title and year row -->
-            <div class="flex justify-between items-center  py-1 px-2 sm:px-6 border-b-2">
-                <div class=" text-cyan-700/65 text-base sm:text-lg font-semibold w-9/12">{{ title }}</div>
+            <div class="flex justify-between items-center py-1 px-2 sm:px-6 border-b-2">
+                <div class=" text-cyan-700/65 text-base sm:text-xl font-semibold w-10/12">{{ title }}</div>
                 <div class="text-xs sm:text-sm text-gray-500 font-light w-2/12 text-right">{{ year }}</div>
             </div>
 
