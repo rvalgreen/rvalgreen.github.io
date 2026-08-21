@@ -5,3 +5,25 @@
 body {
   cursor: url('/xwingv3.png'), auto !important;
 }
+
+.project-entry {
+  @apply text-black overflow-hidden rounded-lg border-l-4 border-cyan-600 bg-white shadow-md ring-1 ring-black/5
+    flex flex-col sm:flex-row mb-8 mx-auto w-10/12 xl:w-8/12
+    transition hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.project-description {
+  @apply line-clamp-2 sm:line-clamp-3 lg:line-clamp-4;
+}
+
+.project-description.expanded {
+  @apply line-clamp-none;
+}
+
+.show-more-btn {
+  @apply text-blue-600 hover:underline text-xs;
+}
+
+.icon-link {
+  @apply flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-md transition;
+}
